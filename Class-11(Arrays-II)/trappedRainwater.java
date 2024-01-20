@@ -31,32 +31,7 @@ public class trappedRainwater {
         return trappedWater;
     }
 
-    //Approach-2
-//    public static int trapped_rainwater(int[] height){
-//        int n = height.length;
-//        int result = 0;
-//        int left = 0;
-//        int right = n-1;
-//        int lMax = height[1];
-//        int rMax = height[right];
-//
-//        while(left < right){
-//            if(lMax < rMax){
-//                left++;
-//                lMax = Math.max(lMax, height[left]);
-//                result += lMax - height[left];
-//            } else {
-//                right--;
-//                rMax = Math.max(rMax, height[right]);
-//                result += rMax - height[right];
-//            }
-//        }
-//
-//        return result;
-//    }
-
     public static void main(String[] args) {
-//        int[] height = {4,2,0,6,3,2,5};
         int[] height = {0,1,0,2,1,0,1,3,2,1,2,1};
         System.out.println(trapped_rainwater(height));
     }
